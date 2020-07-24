@@ -31,12 +31,8 @@ How to read a file through main:
 
 ```
 
-Static or Public:
+Static VS Instance Methods Java:
 
-The meaning of Encapsulation, is to make sure that "sensitive" data is hidden from users. To achieve this, you must:
+STATIC: A Static Method Belongs to a class rather than an instance of a class. The method is accessible to every instance of a class, but methods defined in an instance are only able to be accessed by that member of a class.
 
-    declare class variables/attributes as private
-    
-    provide public get and set methods to access and update the value of a private variable
-    
-You learned from the previous chapter that private variables can only be accessed within the same class (an outside class has no access to it). However, it is possible to access them if we provide public get and set methods.
+INSTANCE: Methods that require an object of its class to be created before calling it is called as  Instance methods. To invoke a instance method, we have to create an Object of the class in within which it defined

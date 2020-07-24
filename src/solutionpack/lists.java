@@ -12,7 +12,7 @@ public class lists {
     //Instantiate the class with a private  Linked List
      private static LinkedList<Integer> classList = new LinkedList<Integer>();
 
-    //Constructor Method for class 'lists'
+    //static Constructor Method for class 'lists'
     public static void setlists(){
         //add elements to LinkedList
         LinkedList<Integer> listCreation = new LinkedList<Integer>();
@@ -61,7 +61,8 @@ public class lists {
 
     //reverse linked list
         public static LinkedList<Integer> reverseLinkedList(){
-        //Overall Idea: Convert LinkedList to array, reverse array, convert back into Linked List
+            //Overall Idea: Iterate backwards over a linked list converted to an array, on each iteration add the value to an empty linked effectively creating a new linked list that is reversed
+            // Return newly created linked list reversed from the original
 
         //Original Linked List
         LinkedList<Integer> listCreation = new LinkedList<Integer>();
@@ -69,7 +70,7 @@ public class lists {
         listCreation.add(2);
         listCreation.add(3);
 
-        //Linked List reversed
+        //Create Linked List to fill with reversed
             LinkedList<Integer> reversedList = new LinkedList<>();
         //Convert Linked List to array for easier backwards parsing
         Object[] linkedListToArray = listCreation.toArray();
@@ -82,12 +83,8 @@ public class lists {
         return reversedList;
     }
 
-
-
     public static void main(String args[]){
     lists.reverseLinkedList();
-
-
 
     }
 }
